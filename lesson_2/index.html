@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ltsson 2</title>
+</head>
+<body>
+  <h1>Hello</h1>
+
+  <!-- ! HTML тегі -->
+   <!-- Будова  (Анатомія) HTML тегу -->
+   
+   <!-- ! Тег з зачиняючим елементом  -->
+    <!--  Все що відкрито має бути закрито  -->
+     <!-- 
+      <назва_тегу>
+       Наповнення тегу(інші тегі контент)
+      </назва_тегу>  
+     -->
+
+   <!-- ! Тег без зачиняючего елементу -->
+     <!--  
+        <назва_тегу> 
+     -->
+
+   <!-- ! Тег з атрібутом  -->
+    <!-- ! Атрібутів може бути скільки завгодно  -->
+
+    <!--  
+      <назва_тегу назва_атрибуту="значення атрибуту" назва_атрибуту_2="значення_атрибуту">
+        Наповнення тегу (інші тегі, контент)
+      </назва_тегу>
+      або
+      <назва_тегу назва_атрибуту="значення атрибуту">
+     -->
+   
+    <!-- ! Тегі для будівництва   (будівельні)  -->
+       <!-- ! Будівельни теги ніяк не змінюють контент  -->
+
+         <!-- 
+           HEADER  Будівельний тег для побудови верхньої частини сайту
+         -->
+       <header>
+         <!-- Наповнення тегу (інші тегі, контент) -->
+       </header>
+
+       <!--  !FOOTER   -->
+        <footer>
+           <!-- Наповнення тегу (інші тегі, контент) -->
+        </footer>
+
+       <!--  !MAIN   -->
+        <main>
+           <!-- Наповнення тегу (інші тегі, контент) -->
+        </main>
+       <!-- ! DIV  Будівельний тег БЕЗ конкретного призначення з (зачиняючим елементом) -->
+
+        <!-- ! Стандартна конструкція сайту  -->
+           <header></header>
+           <main></main>
+           <footer></footer>
+
+    <!-- ! Тегі для контенту  (контентні)  -->
+       <!-- ! Контентні тегі можуть змінюваті контент  -->
+       
+       Заголовкі
+       <h1></h1>
+       <h2></h2>
+
+      <!-- ! P тег параграфу -->
+        <p></p>
+           <p>Lorem ipsum dolor sit <mark>amet consectetur adipisicing </mark>elit. Ab 
+            reprehenderit quo, doloremque <span>laboriosam id optio</span> voluptas accusamus corporis 
+            suscipit facere, ut sequi? Sequi eos odio eligendi autem? Commodi, enim voluptate?
+           </p>
+      
+      <!-- ! UL + LI   Маркований список --> 
+       <ul>
+         <li>lorem</li>
+       </ul>
+
+      <!-- !  OL + LI Нумеровантй список  -->
+        <ol>
+          <li>lorem</li>
+        </ol>
+      <!-- ! Владенність списків  -->
+       <ul>
+        <li>
+          Пункт списку
+          <ul>
+            <li>ПідПункт списку</li>
+            <li>
+              ПідПункт списку
+              <ol>
+                <li>ПідПункт списку</li>
+                <li>ПідПункт списку</li>
+                <li>ПідПункт списку</li>
+              </ol>
+            </li>
+            <li>ПідПункт списку</li>
+          </ul>
+        </li>
+        <li>Пункт списку</li>
+        <li>Пункт списку</li>
+        <li>Пункт списку</li>
+       </ul>
+
+    <!-- ! IMG вивід зображення  -->
+
+        <img src="img/honey.jpg" alt="honey">
+      
+    <!-- ! A гіпертекстове посилання (з зачиняючим елементом)  -->
+
+           <a href="https://www.google.com">Google</a>  
+    
+      <!-- 
+        Атрибут "target"  встанавлюе де саме мае
+                          відкритись адрес 
+     -->
+      <a target="_blank" href="https://www.google.com">Google</a>
+
+      <!-- TITLE  підказка  -->
+
+     <a target="_blank" title="на сайт Google" href="https://www.google.com">Google</a>  
+
+     <div title="текст риба" class="text">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta cumque odio
+        magni sapiente? Harum cumque perspiciatis laudantium praesentium enim molestiae 
+        rem et suscipit? Repellendus ducimus architecto ut soluta corporis exercitationem?
+      </p>
+     </div>
+
+     <!-- ! Class  -->
+       <!-- 
+         До одного ми можеьщ додавати безліч классів
+         (через пробіл) в одному атрібуті class
+       -->
+      <!--! DIV з классом "block"  -->
+          <div class="block"></div>
+      <!-- ! P з классом "block" -->
+           <p class="block"></p>
+      <!-- ! DIV з классом "block та red" -->
+           <div class="block red"></div>
+
+      <!--!  ID   може бути тільки один на сторінки -->
+
+      <!--!  БЛОЧНІ, РЯДКОВІ та БЛОЧНО-РЯДКОВІ тегі   -->
+
+      <!-- ! Блочні тегі--  усі БУДІВЕЛЬНИ  -->
+          <!--  Усі будівельни (div header footer main ) -->
+          <!--  Та Контентні  ( h1-h6 p ul ol li  ) -->
+
+          <!-- 
+			      Ширина блочного тегу завжди займає 
+			      ВСЮ ширину батьківського елементу. 
+			      Висота формується контентом всередені
+			      Блочний тег завжди починається з нового рядка
+		      -->  
+
+      
+      <!--!   Рядкові тегі     -->  
+          <!--   span  mark  a br    -->
+
+          <!-- 
+			      Ширина рядкового тегу займає ширину по ширині
+			      контенту всередені нього.Висота формується контентом всередені
+			      Рядковий тег намагається розміститись в рядок
+			      разом і іншими рядковими тегами, 
+			      блочно-рядковими тегами або текстом
+		      -->
+
+      <!--!   Блочно-Рядкові   -->
+          <!--   img   -->
+
+          <!-- 
+			      Ширина блочно-рядкового  тегу займає ширину по ширині
+			      контенту всередені нього.Висота формується контентом всередені
+			      Блочно-рядкового тег намагається розміститись в рядок
+			      разом і іншими рядковими тегами, блочно-рядковими тегами або текстом
+		       -->
+
+
+  <!-- !HTML-вкладеність та конструкції -->
+		<!-- 
+			Загальне правило вкладеності:
+			В більшість рядкових тегів 
+			не можна вкладати блочні теги 
+		-->
+		
+		<!-- Зазвичай вкладеніть виконується так: -->
+		<!-- 
+			будівельні теги -> теги для контенту
+		 -->
+
+		<!-- ВИКЛЮЧЕННЯ -->
+		<!-- 
+			В тег A дозволяється вкладати будівельні теги,
+			якщо цього вимагає макет дизайну
+		 -->
+		<!-- 
+		   <a href="#">
+			   <div>
+				    <p>
+					    <span></span>
+				    </p>
+			   </div>
+		   </a>
+		 -->
+
+		<!-- НЕ ВІРНО -->
+		<!-- 
+		<span>
+			<header></header>
+			<div></div>
+			<footer></footer>
+			<h1></h1>
+			<p></p>
+		</span>
+		 -->
+
+		<!-- НЕ ВІРНО (BR) -->
+		<!-- 
+		  <main>
+			 <div>
+				 <p></p>
+				 <p></p>
+				 <p></p>
+				 <p></p>
+			 </div>
+			 <br><br><br>
+			 <div></div>
+		  </main>
+		 -->
+
+		<!-- НЕ ВІРНО (UL) -->
+		<!-- вкладати беспосередньо в списки будь що крім li -->
+
+		<!-- 
+       <ul>
+			  <a href=""></a>
+		   </ul>
+		 -->
+
+		<!-- ВІРНО (UL) -->
+	
+    <!-- 
+		 <ul>
+			 <li>
+				<a href=""></a>
+			 </li>
+		 </ul>
+		-->
+
+		<!-- ЦЕ ВІРНО -->
+		<!-- 
+		 <div>
+			 <div></div>
+		 </div>
+		 -->
+
+		<!-- ЦЕ ВІРНО -->
+		<!-- 
+
+		<header>
+			<div>
+				<a href="#"></a>
+				<ul>
+					<li></li>
+				</ul>
+				<div></div>
+			</div>
+		</header>
+
+		<main>
+			<div></div>
+			<a href="#"></a>
+			<p></p>
+			<ul>
+				<li></li>
+			</ul>
+			<div>
+				<a href="#"></a>
+				<p></p>
+			</div>
+		</main>
+
+		<footer>
+			<div></div>
+			<a href="#"></a>
+			<ul>
+				<li></li>
+			</ul>
+		</footer>
+		 -->
+        
+       <!-- Рівні вкладеності -->
+
+		<!-- Нульовий рівень вкладеності -->
+		<header> <!-- Батьківським тегом для тегу DIV -->
+
+			<!-- 1-й (беспосередній) рівень вкладеності відносно тегу HEADER -->
+			<div>
+				<!-- 2-й рівень вкладеності відносно тегу HEADER -->
+				<!-- 1-й (беспосередній) рівень вкладеності відносно тегу DIV -->
+				<div>
+
+				</div><!-- Дочірнім тегом для тегу HEADER -->
+			</div><!-- Дочірнім тегом для тегу HEADER -->
+
+			<!-- 1-й (беспосередній) рівень вкладеності відносно тегу HEADER -->
+			<div>
+				<!-- 2-й рівень вкладеності відносно тегу HEADER -->
+				<!-- 1-й (беспосередній) рівень вкладеності відносно тегу DIV -->
+				<p>
+					<!-- 3-й рівень вкладеності відносно тегу HEADER -->
+					<!-- 2-й рівень вкладеності відносно тегу DIV -->
+					<!-- 1-й (беспосередній) рівень вкладеності відносно тегу P -->
+					<a href="#"></a>
+				</p>
+			</div>
+
+        <!--!   Конструкції   -->
+
+		<!-- Звичайна конструкція шапки сайту -->
+
+		<!-- 
+		 <header>
+			 <div>
+				 <a href="#"></a>
+				 <ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				 </ul>
+				 <div></div>
+			 </div>
+		 </header>
+		 -->
+
+		<!-- Звичайна конструкція підвалу сайту -->
+		<!-- 
+
+		<footer>
+			<div>
+				<a href="#"></a>
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+				<div></div>
+			</div>
+		</footer>
+		 -->
+
+		<!--!  Звичайна конструкція тіла сайту  -->
+		<!-- 
+
+		<main>
+			<div>
+				<h1></h1>
+				<p></p>
+				<p>
+					<a href></a>
+					<span></span>
+					<mark></mark>
+					<br>
+				</p>
+				<p></p>
+				<p></p>
+				<h2></h2>
+				<p></p>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<h2></h2>
+				<p></p>
+				<ol>
+					<li></li>
+				</ol>
+				<h3></h3>
+				<p></p>
+			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</main>
+		 -->
+
+		<!--!   Конструкція текстової сторінки   -->
+		<!-- 
+
+		<header>
+			<div>
+				<a href="#"></a>
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+				<div></div>
+			</div>
+		</header>
+		<main>
+			<div>
+				<h1></h1>
+				<p></p>
+				<p>
+					<a href></a>
+					<span></span>
+					<mark></mark>
+					<br>
+				</p>
+				<p></p>
+				<p></p>
+				<h2></h2>
+				<p></p>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<h2></h2>
+				<p></p>
+				<ol>
+					<li></li>
+				</ol>
+				<h3></h3>
+				<p></p>
+			</div>
+		</main>
+		<footer>
+			<div>
+				<a href="#"></a>
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+				<div></div>
+			</div>
+		</footer>
+		 -->
+      
+		   <!--!   Приклад вкладеності в тег A -->
+		<!--  Обидва посилання ведуть на одну і ту ж сторінку -->
+
+		<!-- 
+		<div>
+			<div>
+				<a href="contacts.html">
+					<img src="img/honey.jpg" alt="Honey">
+				</a>
+			</div>
+			<div>
+				<a href="contacts.html">Text</a>
+			</div>
+		</div>
+		 -->
+
+		<!-- Оптимізований варіант -->
+
+		<!-- 
+		<a href="contacts.html">
+			<div>
+				<img src="img/honey.jpg" alt="Honey">
+			</div>
+			<div>
+				Text
+			</div>
+		</a>
+		 -->
+     
+		 <header>
+			<div>
+				<ul>
+					<li>
+						<a href="#section-1">Розділ 1</a>
+					</li>
+					<li>
+						<a href="#section-2">ПідЗаголовок</a>
+					</li>
+					<li>
+						<a href="contacts.html">Contacts</a>
+					</li>
+				</ul>
+			</div>
+		 </header>
+		 <main>
+			<div>
+				<h1 id="section-1" >Заголовок 1</h1>
+				<p>
+				 Lorem ipsum dolor sit amet consectetur adipisicing elit. <a target="_blank" href="https://www.google.com">Sed tenetur</a> reiciendis provident sapiente deleniti exercitationem nulla, ad beatae repudiandae iusto quasi molestiae magnam aut expedita ullam mollitia veniam amet commodi.
+				 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione accusantium unde, maiores eius eaque quia tempora aliquam id laudantium ab perspiciatis quibusdam omnis quisquam error amet. Delectus, tenetur. Voluptas, deserunt?
+				 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloremque temporibus similique soluta maxime perferendis error obcaecati necessitatibus vitae voluptate hic dolorum architecto dignissimos mollitia quaerat amet laboriosam, quam alias?
+				 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto eligendi modi, explicabo officia laudantium corporis quam illum ab sequi odit nemo, dolorum repudiandae omnis reiciendis libero necessitatibus! A, sit laborum.
+				 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae recusandae officia labore quidem dolore omnis tempora aliquid. Aperiam temporibus rerum impedit quae explicabo velit, esse, blanditiis atque ipsam, illo ex.
+				 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, est voluptates? Facere natus facilis minus qui non ratione reprehenderit harum, dolorum laborum nemo optio ea porro in quibusdam temporibus mollitia?
+				</p>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo recusandae nihil, blanditiis sint quod eaque ex ipsum? Sunt commodi libero consequatur,<a target="_blank" href="https://www.google.com">laboriosam </a> consectetur nemo repellendus cumque dolorem quasi mollitia.
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione accusantium unde, maiores eius eaque quia tempora aliquam id laudantium ab perspiciatis quibusdam omnis quisquam error amet. Delectus, tenetur. Voluptas, deserunt?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloremque temporibus similique soluta maxime perferendis error obcaecati necessitatibus vitae voluptate hic dolorum architecto dignissimos mollitia quaerat amet laboriosam, quam alias?
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto eligendi modi, explicabo officia laudantium corporis quam illum ab sequi odit nemo, dolorum repudiandae omnis reiciendis libero necessitatibus! A, sit laborum.
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae recusandae officia labore quidem dolore omnis tempora aliquid. Aperiam temporibus rerum impedit quae explicabo velit, esse, blanditiis atque ipsam, illo ex.
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, est voluptates? Facere natus facilis minus qui non ratione reprehenderit harum, dolorum laborum nemo optio ea porro in quibusdam temporibus mollitia?
+				</p>
+				<ul>
+					<li>Пункт</li>
+					<li>Пункт</li>
+					<li>Пункт</li>
+					<li>Пункт</li>
+				</ul>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet est eum doloribus vel, soluta cum iure accusamus. Eos voluptate, ut, quaerat pariatur, officia ipsum iste minima eius veritatis sunt maxime?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nisi sit aperiam? Similique quidem laudantium enim delectus ipsum voluptates tenetur fugit magnam quaerat, veritatis deserunt, eveniet doloribus! Incidunt, perferendis optio.
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus tempore minus, alias hic exercitationem eveniet distinctio modi doloribus. Quis adipisci temporibus illum ipsum aut praesentium libero sequi sint facilis architecto?
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dolore doloribus placeat voluptatibus asperiores nam dolorem deleniti rem iusto esse officia laborum cum magni similique earum, distinctio, natus porro voluptatum!
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt illo adipisci iure unde. Officiis id quo est! Quasi architecto, iusto sunt sapiente molestiae laboriosam quos minus, laudantium molestias quis cumque.
+				</p>
+				<h2 id="section-2" >ПідЗаголовок</h2>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, odit voluptas. <a target="_blank" href="https://www.google.com">Repudiandae</a> laboriosam maxime ducimus us doloribesse, veritatis dolor quibusdam saepe deleniti quae facilis impedit, delectus eius voluptates officiis tempore?
+        </p>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem explicabo sunt possimus, laborum delectus fuga sapiente architecto doloremque recusandae quasi dolorem enim nam <a target="_blank" href="https://www.google.com">Google</a> corrupti! Tenetur necessitatibus laudantium in cum unde?
+				</p>
+				<img src="img/honey.jpg" alt="Honey">
+			 </div>
+		 </main>
+		  
+</body>
+</html>
